@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700');
+
+$color-main: #34495e;
+$color-secondary: #3a3a3a;
+$color-secondary-2: #21262d;
+$color-secondary-3: #191c21;
+$color-secondary-4: #171717;
+$color-secondary-5: #ecedf0;
+
+$font-color-1: #777777;
+$font-color-2: #abb4be;
+$font-color-3: #ffffff;
+$font-color-4: #c3c3c3;
+$font-color-5: #808697;
+
+//project
+
+$finishBtnColor: #aeea00;
+
+$h1: 30px;
+$h2: 24px;
+$h3: 20px;
+$h4: 18px;
+$h5: 14px;
+$h6: 12px;
+
+$font-family-1: Roboto, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei,
+	Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+$font-family-2: Open Sans, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei,
+	Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+
+body {
+	font-family: $font-family-1 !important;
+	font-size: $h5;
+	color: $font-color-2;
+	background-color: $color-secondary-5;
+	min-width: 315px;
+	overflow-x: hidden;
+	font-smooth: always;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+}

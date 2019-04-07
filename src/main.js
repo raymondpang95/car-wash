@@ -27,3 +27,7 @@ function view() {
 	} else {
 	}
 }
+
+function cancelConfirm() {
+	confirm('Cancel this Booking?');
+}

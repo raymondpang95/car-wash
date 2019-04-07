@@ -1,0 +1,302 @@
+<div class="card p-3 text-center">
+	<h2 class="title my-3">Stock</h2>
+
+	<form action="" class="py-4">
+		<div class="d-flex">
+			<i class="fas fa-search mt-2  mr-3"></i>
+			<input class="form-control" type="text" placeholder="Search" />
+		</div>
+	</form>
+	<nav aria-label="Page navigation example" class="d-flex justify-content-between  flex-wrap">
+		<ul class="pagination pg-blue mt-0  mb-0  flex-wrap">
+			<li class="page-item mx-1"><a class="page-link p-2">Previous</a></li>
+			<li class="page-item active mx-1"><a class="page-link p-2">1</a></li>
+			<li class="page-item mx-1"><a class="page-link p-2">2</a></li>
+			<li class="page-item mx-1"><a class="page-link p-2">3</a></li>
+			<li class="page-item mx-1"><a class="page-link p-2">Next</a></li>
+		</ul>
+		<button class="btn btn-sm p-2 btn-primary" data-toggle="modal" data-target="#addStock">
+			New Stock
+		</button>
+	</nav>
+	<div class="table-responsive text-nowrap">
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th class="tableColSize-1" scope="col">No</th>
+					<th class="tableColSize-1" scope="col">Item Code</th>
+					<th class="tableColSize-1" scope="col">Item Name</th>
+					<th class="tableColSize-1" scope="col">Description</th>
+					<th class="tableColSize-1" scope="col">Quantity</th>
+					<th class="tableColSize-1" scope="col">Function</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="tableColSize-1">1</td>
+					<td class="tableColSize-1">d170241b</td>
+					<td class="tableColSize-1">iphone</td>
+					<td class="tableColSize-1">44</td>
+					<td class="tableColSize-1">44</td>
+					<td class="tableColSize-0">
+						<div class="d-flex justify-content-center">
+							<button data-toggle="modal" data-target="#increaseStock" class="btn btn-sm p-1  btn-primary">
+								Increase
+							</button>
+							<button data-toggle="modal" data-target="#decreaseStock" class="btn btn-sm p-1 btn-primary">
+								Decrease
+							</button>
+							<button data-toggle="modal" data-target="#editStock" class="btn btn-sm p-1  btn-primary">
+								Edit
+							</button>
+							<button data-toggle="modal" data-target="#viewLogStock" class="btn btn-sm p-1 btn-primary"">
+								View Log
+							</button>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<!-- Add New Stock  -->
+<div
+	class="modal fade"
+	id="addStock"
+	tabindex="-1"
+	role="dialog"
+	aria-labelledby="exampleModalLabel"
+	aria-hidden="true"
+>
+	<div class="modal-dialog  modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title staffAccountTitle w-100 text-center" id="exampleModalLabel">
+					Add New Stock
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="container">
+					<form class="">
+						<div class="row ">
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Item Name</p>
+								<input type="text" class="form-control mb-2" placeholder="Payout Date" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Item Code</p>
+								<input type="text" class="form-control mb-2" placeholder="Salary Amount" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Item Quantity</p>
+								<input type="text" class="form-control mb-2" placeholder="SOSCO" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Item description</p>
+								<input type="text" class="form-control mb-2" placeholder="SOSCO" />
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer d-flex justify-content-center">
+				<button type="button" class="btn btn-sm btn-primary">Save</button>
+				<button type="button" class="btn btn-sm btn-primary">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Increase  Stock  -->
+<div
+	class="modal fade"
+	id="increaseStock"
+	tabindex="-1"
+	role="dialog"
+	aria-labelledby="exampleModalLabel"
+	aria-hidden="true"
+>
+	<div class="modal-dialog  modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title staffAccountTitle w-100 text-center" id="exampleModalLabel">
+					Increase Stock
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="container">
+					<form class="">
+						<div class="row ">
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Item code</p>
+								<input type="text" class="form-control mb-2" placeholder="Payout Date" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Quantity</p>
+								<input type="number" class="form-control mb-2" placeholder="Payout Date" />
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer d-flex justify-content-center">
+				<button type="button" class="btn btn-sm btn-primary">Save</button>
+				<button type="button" class="btn btn-sm btn-primary">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Decrease  Stock  -->
+<div
+	class="modal fade"
+	id="decreaseStock"
+	tabindex="-1"
+	role="dialog"
+	aria-labelledby="exampleModalLabel"
+	aria-hidden="true"
+>
+	<div class="modal-dialog  modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title staffAccountTitle w-100 text-center" id="exampleModalLabel">
+					Decrease Stock
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="container">
+					<form class="">
+						<div class="row ">
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Item code</p>
+								<input type="text" class="form-control mb-2" placeholder="Payout Date" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Quantity</p>
+								<input type="number" class="form-control mb-2" placeholder="Payout Date" />
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer d-flex justify-content-center">
+				<button type="button" class="btn btn-sm btn-primary">Save</button>
+				<button type="button" class="btn btn-sm btn-primary">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--  Edit Stock  -->
+<div
+	class="modal fade"
+	id="editStock"
+	tabindex="-1"
+	role="dialog"
+	aria-labelledby="exampleModalLabel"
+	aria-hidden="true"
+>
+	<div class="modal-dialog  modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title staffAccountTitle w-100 text-center" id="exampleModalLabel">
+					Edit Stock
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="container">
+					<form class="">
+						<div class="row ">
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Item Name</p>
+								<input type="text" class="form-control mb-2" placeholder="Payout Date" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Item Code</p>
+								<input type="text" class="form-control mb-2" placeholder="Salary Amount" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Item Quantity</p>
+								<input type="text" class="form-control mb-2" placeholder="SOSCO" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Item description</p>
+								<input type="text" class="form-control mb-2" placeholder="SOSCO" />
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer d-flex justify-content-center">
+				<button type="button" class="btn btn-sm btn-primary">Save</button>
+				<button type="button" class="btn btn-sm btn-primary">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--  View Log Stock  -->
+<div
+	class="modal fade"
+	id="viewLogStock"
+	tabindex="-1"
+	role="dialog"
+	aria-labelledby="exampleModalLabel"
+	aria-hidden="true"
+>
+	<div class="modal-dialog  modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title staffAccountTitle w-100 text-center" id="exampleModalLabel">
+					History Log
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="container">
+					<nav aria-label="Page navigation example" class="d-flex justify-content-between  flex-wrap">
+						<ul class="pagination pg-blue mt-3  mb-3  flex-wrap">
+							<li class="page-item mx-1"><a class="page-link p-2">Previous</a></li>
+							<li class="page-item active mx-1"><a class="page-link p-2">1</a></li>
+							<li class="page-item mx-1"><a class="page-link p-2">2</a></li>
+							<li class="page-item mx-1"><a class="page-link p-2">3</a></li>
+							<li class="page-item mx-1"><a class="page-link p-2">Next</a></li>
+						</ul>
+					</nav>
+					<div class="table-responsive text-nowrap">
+						<table class="table table-bordered table-hover text-center">
+							<thead>
+								<tr>
+									<th class="tableColSize-1" scope="col">No</th>
+									<th class="tableColSize-1" scope="col">Action</th>
+									<th class="tableColSize-1" scope="col">Date</th>
+									<th class="tableColSize-1" scope="col">Quantity</th>
+									<th class="tableColSize-1" scope="col">Action by</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="tableColSize-1">1</td>
+									<td class="tableColSize-1">Out</td>
+									<td class="tableColSize-1">2019-03-28 07:10:42.000000</td>
+									<td class="tableColSize-1">1</td>
+									<td class="tableColSize-1">Miss Madelynn Effertz</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,238 @@
+<div class="card  p-3 text-center">
+	<h2 class="title my-3">Manage Staff</h2>
+
+	<form action="" class="py-4">
+		<div class="d-flex">
+			<i class="fas fa-search mt-2  mr-3"></i>
+			<input class="form-control" type="text" placeholder="Search" />
+		</div>
+	</form>
+	<nav aria-label="Page navigation example" class="d-flex justify-content-between  flex-wrap">
+		<ul class="pagination pg-blue mt-0  mb-0  flex-wrap">
+			<li class="page-item mx-1"><a class="page-link p-2">Previous</a></li>
+			<li class="page-item active mx-1"><a class="page-link p-2">1</a></li>
+			<li class="page-item mx-1"><a class="page-link p-2">2</a></li>
+			<li class="page-item mx-1"><a class="page-link p-2">3</a></li>
+			<li class="page-item mx-1"><a class="page-link p-2">Next</a></li>
+		</ul>
+		<button class="btn btn-sm p-2 btn-primary" data-toggle="modal" data-target="#addStaff">
+			Add Staff
+		</button>
+	</nav>
+
+	<div class="table-responsive text-nowrap mt-4">
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th class="tableColSize-1" scope="col">No</th>
+					<th class="tableColSize-1" scope="col">Staff ID</th>
+					<th class="tableColSize-1" scope="col">Name</th>
+					<th class="tableColSize-1" scope="col">Mobile Number</th>
+					<th class="tableColSize-1" scope="col">Role</th>
+					<th class="tableColSize-1" scope="col">Function</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="tableColSize-1">1</td>
+					<td class="tableColSize-1">d170241b</td>
+					<td class="tableColSize-1">Raymond</td>
+					<td class="tableColSize-1">0127990020</td>
+					<td class="tableColSize-1">Manager</td>
+					<td class="tableColSize-0">
+						<div class="d-flex">
+							<button
+								class="btn btn-sm p-1 btn-primary"
+								data-toggle="modal"
+								data-target="#editManageStaff"
+							>
+								Edit
+							</button>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<!-- Add Staff Account -->
+<div
+	class="modal fade"
+	id="addStaff"
+	tabindex="-1"
+	role="dialog"
+	aria-labelledby="exampleModalLabel"
+	aria-hidden="true"
+>
+	<div class="modal-dialog  modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title staffAccountTitle w-100 text-center" id="exampleModalLabel">
+					Add Staff Account
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="container">
+					<form class="">
+						<div class="row ">
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Username</p>
+								<input type="text" class="form-control mb-2" placeholder="Username" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Password</p>
+								<input type="password" class="form-control mb-2" placeholder="Password" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Nickname</p>
+								<input type="text" class="form-control mb-2" placeholder="Nickname" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Email</p>
+								<input type="email" class="form-control mb-2" placeholder="Email" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Mobile Number</p>
+								<input type="number" class="form-control mb-2" placeholder="HP" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Address</p>
+								<input type="text" class="form-control mb-2" placeholder="Address" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Monthly Salary</p>
+								<input type="text" class="form-control mb-2" placeholder="Salary" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Role</p>
+								<input type="text" class="form-control mb-2" placeholder="Role" />
+							</div>
+
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Upload Profile Picture</p>
+								<div class="input-default-wrapper mt-3">
+									<span class="input-group-text mb-3" id="input1">Upload </span>
+
+									<input type="file" id="file-with-current" class="input-default-js" />
+
+									<label class="label-for-default-js rounded-right mb-3" for="file-with-current"
+										><span class="span-choose-file">Choose file</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer d-flex justify-content-center">
+				<button type="button" class="btn btn-sm btn-primary">Save</button>
+				<button type="button" class="btn btn-sm btn-primary">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Edit Staff Account -->
+<div
+	class="modal fade"
+	id="editManageStaff"
+	tabindex="-1"
+	role="dialog"
+	aria-labelledby="exampleModalLabel"
+	aria-hidden="true"
+>
+	<div class="modal-dialog  modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title staffAccountTitle w-100 text-center" id="exampleModalLabel">
+					Edit Staff Account
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="container">
+					<form class="">
+						<div class="row ">
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Username</p>
+								<input type="text" class="form-control mb-2" placeholder="Username" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Password</p>
+								<input type="password" class="form-control mb-2" placeholder="Password" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Nickname</p>
+								<input type="text" class="form-control mb-2" placeholder="Nickname" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Mobile Number</p>
+								<input type="number" class="form-control mb-2" placeholder="Mobile Number" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Email</p>
+								<input type="email" class="form-control mb-2" placeholder="Email" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Address</p>
+								<input type="text" class="form-control mb-2" placeholder="Address" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Monthly Salary</p>
+								<input type="text" class="form-control mb-2" placeholder="Salary" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Role</p>
+								<input type="text" class="form-control mb-2" placeholder="Role" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Annual Leave Count</p>
+								<input type="number" class="form-control mb-2" placeholder="Annual Leave Count" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Annual Leave Taken</p>
+								<input type="number" class="form-control mb-2" placeholder="Annual Leave Taken" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Sick Leave Count</p>
+								<input type="number" class="form-control mb-2" placeholder="Sick Leave Count" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Sick Leave Taken</p>
+								<input type="number" class="form-control mb-2" placeholder="Sick Leave Taken" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Onleave Status</p>
+								<input type="number" class="form-control mb-2" placeholder="Onleave Status" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Is Active</p>
+								<input type="number" class="form-control mb-2" placeholder="Is Active" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Upload Profile Picture</p>
+								<div class="input-default-wrapper mt-3">
+									<span class="input-group-text mb-3" id="input1">Upload </span>
+
+									<input type="file" id="file-with-current" class="input-default-js" />
+
+									<label class="label-for-default-js rounded-right mb-3" for="file-with-current"
+										><span class="span-choose-file">Choose file</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer d-flex justify-content-center">
+				<button type="button" class="btn btn-sm btn-primary">Save</button>
+				<button type="button" class="btn btn-sm btn-primary">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,108 @@
+<div class="card p-3 text-center">
+	<h2 class="title my-3">Pay Out</h2>
+
+	<form action="" class="py-4">
+		<div class="d-flex">
+			<i class="fas fa-search mt-2  mr-3"></i>
+			<input class="form-control" type="text" placeholder="Search" />
+		</div>
+	</form>
+	<nav aria-label="Page navigation example" class="d-flex justify-content-between">
+		<ul class="pagination pg-blue">
+			<li class="page-item "><a class="page-link">Previous</a></li>
+			<li class="page-item active"><a class="page-link">1</a></li>
+			<li class="page-item"><a class="page-link">2</a></li>
+			<li class="page-item"><a class="page-link">3</a></li>
+			<li class="page-item"><a class="page-link">Next</a></li>
+		</ul>
+	</nav>
+
+	<div class="table-responsive text-nowrap">
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th class="tableColSize-1" scope="col">No</th>
+					<th class="tableColSize-1" scope="col">Staff ID</th>
+					<th class="tableColSize-1" scope="col">Name</th>
+					<th class="tableColSize-1" scope="col">Function</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="tableColSize-1">1</td>
+					<td class="tableColSize-1">d170241b</td>
+					<td class="tableColSize-1">Raymond</td>
+					<td class="tableColSize-0">
+						<div class="d-flex">
+							<button class="btn btn-sm p-1 btn-primary" data-toggle="modal" data-target="#payoutEdit">
+								Edit
+							</button>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div
+	class="modal fade"
+	id="payoutEdit"
+	tabindex="-1"
+	role="dialog"
+	aria-labelledby="exampleModalLabel"
+	aria-hidden="true"
+>
+	<div class="modal-dialog  modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title staffAccountTitle w-100 text-center" id="exampleModalLabel">
+					Staff ID: 1 Payout
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="container">
+					<form class="">
+						<div class="row ">
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Payout Date</p>
+								<input type="date" class="form-control mb-2" placeholder="Payout Date" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Salary Amount</p>
+								<input type="number" class="form-control mb-2" placeholder="Salary Amount" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">SOSCO</p>
+								<input type="text" class="form-control mb-2" placeholder="SOSCO" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">EPF</p>
+								<input type="text" class="form-control mb-2" placeholder="EPF " />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Advance Payment</p>
+								<input type="text" class="form-control mb-2" placeholder="Advance Payment" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Bonus</p>
+								<input type="text" class="form-control mb-2" placeholder="Bonus" />
+							</div>
+							<div class="col-lg-6 col-12 p-1">
+								<p class="h6 formLabelName">Total Salary</p>
+								<input type="text" class="form-control mb-2" placeholder="Total Salary" />
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer d-flex justify-content-center">
+				<button type="button" class="btn btn-sm btn-primary">Save</button>
+				<button type="button" class="btn btn-sm btn-primary">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>

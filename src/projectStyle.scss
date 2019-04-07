@@ -27,7 +27,6 @@ $sideBarInsideColor: $color-secondary-3;
 .sideBarInsideColor {
 	background-color: $sideBarInsideColor !important;
 }
-
 .sidebar-fixed {
 	height: 100vh;
 	background-color: $sideBarColor;
@@ -81,5 +80,20 @@ $sideBarInsideColor: $color-secondary-3;
 	padding: 0 !important;
 }
 .tableColSize-1 {
-	padding: 4px 0 !important;
+	padding: 4px !important;
+}
+.modalTitleColor {
+	color: red;
+}
+.staffAccountTitle {
+	color: red;
+}
+.formLabelName {
+	color: #666;
+	font-size: 16px;
+	font-weight: 400;
+}
+.navBottomLine {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+	border-top: 1px solid rgba(0, 0, 0, 0.125);
 }

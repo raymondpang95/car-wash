@@ -97,3 +97,14 @@ $sideBarInsideColor: $color-secondary-3;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 	border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
+.wrap {
+	background-color: #fafafa;
+	.mainTain {
+		color: #212f3c;
+		font-weight: 700;
+	}
+}
+//table title
+.title {
+	color: red;
+}

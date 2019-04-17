@@ -16,3 +16,6 @@ $('#stock').load('../views/stock/stock.html');
 $('#managePackage').load('../views/managePackage/manage_package.html');
 //navigation bar
 $('#header').load('../components/nav.html');
+//payment_voucher
+$('#paymentVoucher').load('./payment_voucher.html');
+

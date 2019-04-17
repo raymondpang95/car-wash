@@ -132,4 +132,24 @@ body {
 .title {
   color: red;
 }
+
+.signLIne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signLIne span {
+  display: block;
+  width: 50%;
+  border-bottom: black 1px solid;
+}
+
+.paymentVoucherTitleSm {
+  color: #1a237e;
+  font-weight: 700;
+}
 /*# sourceMappingURL=projectStyle.css.map */
